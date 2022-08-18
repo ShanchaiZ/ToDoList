@@ -1,7 +1,7 @@
 //User Input and Quit:
 let input = prompt("what would you like to do?");
 
-while (input !== "quit") {
+while (input !== "quit" && input !== "q") {
     input = prompt("what would you like to do?");
 };
 
