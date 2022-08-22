@@ -21,8 +21,9 @@ while (input !== "quit" && input !== "q") {
         console.log(`${newToDo} is added to the list!`);
 
     } else if (input === "delete") {
-        //5. Delete items on the ToDo list and to see if it is an item on the list that can be deleted:
+        //5. Delete items on the ToDo list.... 
         const index = parseInt(prompt("Enter an index to delete!"));
+        //by verifying the correct index to be removed. If not a valid index then run this:
         if (!Number.isNaN(index)) {
             const deletedIndex = todos.splice(index, 1);
             console.log(`User has deleted ${deletedIndex[0]} from the list!`);
