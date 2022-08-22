@@ -14,11 +14,22 @@ while (input !== "quit" && input !== "q") {
             console.log(`${i}: ${todos[i]}`);
         }
         console.log("************************");
-    //4. Add new items to the ToDo list by Push:
     } else if (input === "new") {
+        //4. Add new items to the ToDo list by Push:
         const newToDo = prompt("What would you like to add to the list?");
         todos.push(newToDo);
         console.log(`${newToDo} is added to the list!`);
+
+    } else if (input === "delete") {
+        //5. Delete items on the ToDo list and to see if it is an item on the list that can be deleted:
+        const index = parseInt(prompt("Enter an index to delete!"));
+        if (!Number.isNaN(index)) {
+            const deletedIndex = todos.splice(index, 1);
+            console.log(`User has deleted ${deletedIndex[0]} from the list!`);
+        } else {
+            console.log("Unknown Index");
+        }
+
     }
 
     input = prompt("what would you like to do?");
