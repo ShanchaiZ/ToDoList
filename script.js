@@ -14,6 +14,11 @@ while (input !== "quit" && input !== "q") {
             console.log(`${i}: ${todos[i]}`);
         }
         console.log("************************");
+    //4. Add new items to the ToDo list by Push:
+    } else if (input === "new") {
+        const newToDo = prompt("What would you like to add to the list?");
+        todos.push(newToDo);
+        console.log(`${newToDo} is added to the list!`);
     }
 
     input = prompt("what would you like to do?");
