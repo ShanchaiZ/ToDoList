@@ -37,3 +37,11 @@ while (input !== "quit" && input !== "q") {
 };
 
 console.log("User Has Quit the App!");
+
+//Notes:
+// 1. Created user Input and Quit function using &&and quit/q
+// 2. Make an empty storage array todos.
+// 3. Allow Listing of the stored items in the array by accessing their index and using a for loop
+// 4. Adding of new items in the todos array by "new" => used array."push"
+// 5. Deletion of items in the array by accessing the index and using array."splice" method.
+// 6. Added verification of valid indices to allow proper deletion. Using if statement and input is NOT EQUAL to a Number.
